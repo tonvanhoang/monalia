@@ -1,0 +1,29 @@
+.section-3{
+    padding: 0px 20px;
+    margin: 100px 0px;
+    position: relative;
+    gap: 20px;
+}
+.section-3 h1{
+    font-weight: 200;
+    margin: 0;
+}
+.section-3 hr{
+    border: 1px solid black;
+}
+.section-3 .content{
+    display: flex;
+    padding-top: 40px;
+}
+.section-3 .left{
+    width: 40%;
+}
+.section-3 .right{
+    width: 60%;
+}
+.section-3 .right p{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 200;
+    margin: 0px;
+}

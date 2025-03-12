@@ -1,0 +1,29 @@
+.axerontasRiver{
+    padding: 0px 20px;
+    margin-top: 50px;
+    position: relative;
+    gap: 20px;
+}
+.axerontasRiver h1{
+    font-weight: 200;
+    margin: 0;
+}
+.axerontasRiver hr{
+    border: 1px solid black;
+}
+.axerontasRiver .content{
+    display: flex;
+    padding-top: 40px;
+}
+.axerontasRiver .left{
+    width: 40%;
+}
+.axerontasRiver .right{
+    width: 60%;
+}
+.axerontasRiver .right p{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 200;
+    margin: 0px;
+}

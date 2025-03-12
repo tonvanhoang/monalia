@@ -1,0 +1,59 @@
+.localtionChild{
+    padding: 0px 20px;
+}
+.localtionChild .location,.localtionChild h1{
+    font-weight: 200;
+    font-size: 36px;
+    margin: 0px;
+    line-height: 48px;
+}
+.localtionChild .title{
+    margin-top: 40px;
+}
+
+.localtionChild .bottom{
+    display: flex;
+    align-items: end;
+    gap: 20px;
+    height: 90vh;
+
+}
+.localtionChild .item-1{
+    width: 40%;
+    padding-right: 80px;
+}
+.localtionChild .item-1 p{
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 24px;
+    margin: 0px;
+}
+.localtionChild .item-2{
+    width: 30%;
+    height: 88%;
+}
+.localtionChild .item-3 {
+    position: relative;
+    width: 30%;
+    height: 100%;
+}
+
+.localtionChild .item-3 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+.localtionChild .item-3 source {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.localtionChild img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    object-fit: cover;
+    border-radius: 10px;
+}

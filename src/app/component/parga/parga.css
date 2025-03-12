@@ -1,0 +1,96 @@
+.parge{
+    padding: 0px 20px;
+    margin-top: 50px;
+    position: relative;
+    gap: 20px;
+}
+.parge h1{
+    font-weight: 200;
+    margin: 0;
+}
+.parge hr{
+    border: 1px solid black;
+}
+.parge .content{
+    display: flex;
+    padding-top: 40px;
+}
+.parge .left{
+    width: 40%;
+}
+.parge .right{
+    width: 60%;
+}
+.parge .right p{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 200;
+    margin: 0px;
+}
+/*  */
+.element-images {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.element-images .slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.element-images .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 20px;
+    position: relative;
+}
+
+.element-images .slider .item {
+    width: calc(100% / 3); /* Adjusted width to show 3 items */
+    height: 50vh;
+    flex-shrink: 0;
+    max-width: 100%;
+}
+.element-images .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+.element-images button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; 
+    transition: background-color 0.3s;
+}
+.element-images #prevBtn,
+.element-images #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+.element-images #prevBtn {
+    left: 1%;
+}
+.element-images #nextBtn {
+    right: 1%;
+    transform: translateY(-50%) scaleX(-1);
+}
+
+.element-images #prevBtn:hover,.element-images #nextBtn:hover{
+    cursor: pointer;
+}
+.element-images button:hover {
+    background-color: gray;
+}

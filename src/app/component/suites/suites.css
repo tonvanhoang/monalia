@@ -1,0 +1,156 @@
+.section-4{
+    padding: 0px 20px;
+    margin-top: 100px;
+    position: relative;
+    gap: 20px;
+}
+.section-4 h1{
+    font-weight: 200;
+    margin: 0;
+}
+.section-4 hr{
+    border: 1px solid black;
+}
+.section-4 .content{
+    display: flex;
+    padding-top: 40px;
+}
+.section-4 .left{
+    width: 40%;
+}
+.section-4 .left p{
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 24px;
+}
+.section-4 .left .btn{
+    display: flex;
+    gap: 20px;
+}
+.section-4 .left .btn button{
+    background-color: rgba(255, 255, 255,0);
+    border-radius: 30px;
+    padding: 12px 50px;
+    margin-top: 40px;
+    border: 1px solid black; /* Added border */
+    transition: background-color 0.3s, color 0.3s; /* Added transition */
+}
+.section-4 .left .btn button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white; /* Added color change on hover */
+}
+.section-4 .left .btn button:hover a{
+    color: white;
+    text-decoration: none;
+}
+.section-4 .left .btn button a{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.section-4 .right{
+    width: 60%;
+}
+.section-4 .right p{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 200;
+    margin: 0px;
+}
+.section-4 .right .containerTitle{
+    margin-top: 50px;
+    display: flex;
+}
+.section-4 .right .containerTitle .titleLeft{
+    width: 50%;
+}
+.section-4 .right .containerTitle .titleLeft p{
+    font-size: 16px;
+    font-weight: 200;
+}
+.section-4 .right .containerTitle .titleRight{
+    width: 50%;
+}
+.section-4 .right .containerTitle .titleRight .item div{
+    display: flex;
+}
+.section-4 .right .containerTitle .titleRight .item div img{
+    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+}
+.section-4 .right .containerTitle .titleRight .item div p{
+    font-size: 16px;
+    font-weight: 200;
+}
+.section-4 .right .containerTitle .titleRight .item hr{
+    display: block;
+}
+.section-4 .element-images {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.section-4 .element-images .slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.section-4 .element-images .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 20px;
+    position: relative;
+}
+
+.section-4 .element-images .slider .item {
+    width: calc(100% / 3); /* Adjusted width to show 3 items */
+    height: 50vh;
+    flex-shrink: 0;
+    max-width: 100%;
+}
+.section-4 .element-images .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+.section-4 .element-images button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; 
+    transition: background-color 0.3s;
+}
+.section-4 .element-images #prevBtn,
+.section-4 .element-images #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+.section-4 .element-images #prevBtn {
+    left: 1%;
+}
+.section-4 .element-images #nextBtn {
+    right: 1%;
+    transform: translateY(-50%) scaleX(-1);
+}
+
+.section-4 .element-images #prevBtn:hover,.section-4 .element-images #nextBtn:hover{
+    cursor: pointer;
+}
+.section-4 .element-images button:hover {
+    background-color: gray;
+}

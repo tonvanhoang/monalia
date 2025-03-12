@@ -1,0 +1,56 @@
+.headerRoom{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.headerRoom img{
+    width: 100%;
+    height: 100vh;
+}
+.headerRoom .content{
+    width: 100%;
+    padding: 20px;
+    top: 90%;
+    left: 50%;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    transform: translate(-50%,-50%);
+    justify-content: space-between;
+}
+.headerRoom .content h1{
+    font-size: 120px;
+    font-weight: 200;
+    line-height: 120px;
+}
+.headerRoom .content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+/*  */
+.navigation {
+    padding:40px 20px ;
+}
+.navigation li{
+    list-style: none;
+    font-size: 12px;
+}
+.navigation li a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+    font-weight: 400;
+}
+.navigation li a:hover{
+    opacity: 0.7;
+}
+.title{
+    padding:0px 20px;
+}
+.title p{
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 200;
+    margin: 0;
+}

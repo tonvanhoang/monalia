@@ -1,0 +1,155 @@
+.section-8{
+    width: 100%;
+    padding: 0px 20px;
+    margin-top: 100px;
+}
+.section-8 .item-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-8 .item-1 img:first-child{
+    width: 83px;
+    height: 83px;
+}
+.section-8 .item-1 img:last-child{
+    width: 40px;
+    height: 40px;
+    border-radius: 200%;
+    border: 1px solid black;
+    padding: 10px;
+}
+.section-8 .item-2{
+    display: flex;
+    margin-top: 50px;
+}
+.section-8 .item-2 p{
+    margin: 0px;
+}
+.section-8 .item-2 .col1{
+    width: 45%;
+}
+.section-8 .item-2 .col1 .containerTitle{
+    display: flex;
+    width: 100%;
+}
+.section-8 .item-2 .col1 .containerTitle hr{
+    margin: 5px 0px;
+}
+.section-8 .item-2 .col1 .containerTitle .direct{
+    margin-top: 50px;
+}
+.section-8 .item-2 .col1 .containerTitle .titleLeft{
+    width: 50%;
+}
+.section-8 .item-2 .col1 .containerTitle .titleLeft p{
+    font-size: 16px;
+    font-weight: 200;
+}
+.section-8 .item-2 .col1 .containerTitle .titleRight{
+    width: 50%;
+}
+.section-8 .item-2 .col1 .containerTitle .titleRight .item div{
+    display: flex;
+}
+.section-8 .item-2 .col1 .containerTitle .titleRight .item div img {
+    margin-right: 20px;
+}
+.section-8 .item-2 .col1 .containerTitle .titleRight .item div p{
+    font-size: 16px;
+    font-weight: 200;
+}
+.section-8 .item-2 .hiddenCol{
+    width: 25%;
+}
+.section-8 .item-2 .hiddenCol p{
+    visibility: hidden;
+}
+.section-8 .item-2 .col2,.section-8 .item-2 .col3{
+    width: 15%;
+}
+.section-8 .item-2 .col2 ul,.section-8 .item-2 .col3 ul{
+    padding: 0px;
+}
+.section-8 .item-2 .col2 ul li,.section-8 .item-2 .col3 ul li{
+    list-style: none;
+}
+.section-8 .item-2 .col2 ul li a,.section-8 .item-2 .col3 ul li a{
+    color: black;
+    text-decoration: none;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.section-8 .item-2 .col2 ul li a:hover,.section-8 .item-2 .col3 ul li a:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.section-8 .item-3{
+    width: 100%;
+    margin-top: 150px;
+}
+.section-8 .item-3 .top{
+    display: flex;
+    justify-content: space-between;
+}
+.section-8 .item-3 .top img{
+    width: 240px;
+}
+.section-8 .item-3 .top button:first-child{
+    background-color: rgba(255, 255, 255,0);
+    border-radius: 30px;
+    padding: 12px 50px;
+    margin-top: 40px;
+}
+.section-8 .item-3 .top button:first-child:hover{
+    cursor: pointer;
+    background-color: black;
+}
+.section-8 .item-3 .top button:first-child:hover a{
+    color: white;
+}
+.section-8 .item-3 .top button:first-child a{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.section-8 .item-3 .top button:last-child{
+    background-color: black;
+    border-radius: 30px;
+    padding: 12px 50px;
+    margin-top: 40px;
+}
+.section-8 .item-3 .top button:last-child:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.section-8 .item-3 .top button:last-child a{
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.section-8 .item-3 .top .btn{
+    display: flex;
+    gap: 20px;
+}
+.section-8 .item-3 .bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.section-8 .item-3 hr{
+    margin: 0;
+    margin-top: 25px;
+}
+.section-8 .item-3 .bottom p{
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0px;
+    padding: 15px 0px;
+}
+.section-8 .item-3 .bottom p a{
+    text-decoration: none;
+    color: black;
+}

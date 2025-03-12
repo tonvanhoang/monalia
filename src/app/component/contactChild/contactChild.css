@@ -1,0 +1,172 @@
+.containerContactChild{
+    padding: 0px 20px;
+}
+.containerContactChild h1{
+    font-size: 36px;
+    font-weight: 200;
+    line-height: 48px;
+}
+.containerContactChild .childContact{
+    display: flex;
+    gap: 50px;
+    padding-top: 50px;
+}
+.containerContactChild .childContact .left{
+    width: 50%;
+}
+.containerContactChild .childContact .left .item{
+    display: flex;
+    padding-bottom: 40px;
+}
+.containerContactChild .childContact .left .item .title{
+    width: 50%;
+}
+.containerContactChild .childContact .left .item  hr{
+    margin: 12px 0px;
+}
+.containerContactChild .childContact .left .item .title p{
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 24px;
+    margin: 0;
+}
+.containerContactChild .childContact .left .item .none{
+    visibility: hidden;
+}
+.containerContactChild .childContact .left .item .content{
+    width: 50%;
+}
+.containerContactChild .childContact .left .item .content img{
+    width: 20px;
+    height: 20px;
+}
+.containerContactChild .childContact .left .item .content a{
+    font-size: 16px;
+    font-weight: 200;
+    line-height: -124x;
+    margin-left: 20px;
+}
+.containerContactChild .childContact .left .item .content a:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+/*  */
+.containerContactChild .childContact .right{
+    width: 50%;
+}
+.containerContactChild .childContact .right .title p{
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 24px;
+    margin: 0px;
+}
+.containerContactChild .childContact .right .title hr{
+    margin: 12px 0px;
+}
+/*  */
+.containerContactChild .childContact .right form{
+    padding-top: 40px;
+}
+.containerContactChild .childContact .right form .double-inp{
+    gap: 20px;
+    display: flex;
+}
+.containerContactChild .childContact .right form .double-inp .left{
+    width: 50%;
+}
+.containerContactChild .childContact .right form .double-inp .right{
+    width: 50%;
+}
+.containerContactChild .childContact .right form .double-inp .right input{
+    width: 100%;
+}
+.containerContactChild .childContact .right form .item{
+    margin-bottom: 20px;
+}
+.containerContactChild .childContact .right form label{
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 3px;
+}
+.containerContactChild .childContact .right form label span{
+    color: red;
+}
+.containerContactChild .childContact .right form input,.containerContactChild .childContact .right form textarea{
+    border: 1px solid #d2d2d2;
+    border-radius: 7px;
+    padding: 10px 10px;
+    width: 100%;
+}
+.containerContactChild .childContact .right form .item .check{
+    display: flex;
+    flex-wrap: wrap;
+}
+.containerContactChild .childContact .right form .item .check label{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.containerContactChild .childContact .right form .item .check label input{
+    width: 15px;
+    height: 15px;
+}
+.containerContactChild .childContact .right form .item .check label p{
+    margin: 0;
+    margin-left: 10px;
+}
+.containerContactChild .childContact .right form .item .terms{
+    display: flex;
+    align-items: center;
+}
+.containerContactChild .childContact .right form .item .terms input{
+    width: 15px;
+    height: 15px;
+}
+.containerContactChild .childContact .right form .item .terms p{
+    margin: 0px;
+    margin-left: 10px;
+}
+.containerContactChild .childContact .right form .item .terms p:hover{
+    cursor: pointer;
+}
+.containerContactChild .childContact .right form .btn{
+    display: flex;
+    justify-content: flex-end;
+}
+.containerContactChild .childContact .right form .btn button{
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 80px;
+    font-size: 12px;
+    transition: all 0.5s;
+}
+.containerContactChild .childContact .right form .btn button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+/*  */
+.googleMap{
+    padding: 0px 20px;
+    margin-top: 100px;
+}
+.googleMap .title p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.googleMap .title hr{
+    margin: 0;
+}
+.googleMap .content{
+    width: 100%;
+    height: 85vh;
+    margin-top: 20px;
+}
+.googleMap .content iframe{
+    width: 100%;
+    height: 100%;
+}

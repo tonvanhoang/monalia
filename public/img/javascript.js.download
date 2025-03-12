@@ -1,0 +1,174 @@
+$(document).ready(function() {
+
+    $('.faq_question').click(function() {
+
+        if ($(this).parent().is('.open')) {
+            $(this).closest('.faq').find('.faq_answer_container').slideUp();
+            $(this).closest('.faq').removeClass('open');
+        } else {
+            $('.faq_answer_container').slideUp();
+            $('.faq').removeClass('open');
+            $(this).closest('.faq').find('.faq_answer_container').slideDown();
+            $(this).closest('.faq').addClass('open');
+        }
+    });
+});
+
+/*
+jQuery(".toggle").click(function(){
+    jQuery(".toggle").toggleClass("active");
+    jQuery("#menuholder").toggleClass("active");
+    jQuery("#overlay").toggleClass("open");
+    jQuery("body").toggleClass("no-scroll");
+});*/
+var tl = gsap.timeline({paused: true});
+function openNav(){
+  animateOpenNav();
+
+  var navBtn = document.getElementById("toggle");
+
+  navBtn.onclick = function (e) {
+    // Toggle reversed to it's opposite value
+    tl.reversed(!tl.reversed());
+    // Use the toggle method in the classList API
+    navBtn.classList.toggle("active");
+  };
+}
+
+function animateOpenNav(){
+  var overlayNav = document.getElementById("overlay");
+  tl
+  .set('body',{overflow: 'hidden',})
+  .set('#menuholder .grid-element-center .mobile-logo img:nth-child(1)',{display:'none'})
+  .set('#menuholder .grid-element-center .mobile-logo img:nth-child(2)',{display:'none'})
+
+
+  .to(overlayNav,{
+    opacity: 1,
+    duration: 0.7,
+    'visibility': 'visible',
+    height: '100vh',
+    left: 0,
+    ease: "power1.out"
+  })
+
+  .to('#overlay .overlay-inside .flex-elements .flex-element-right .image-element',{
+    opacity: 1,
+    duration: 0.3,
+    ease: "power1.out"
+  })
+
+  .to('#overlay .menu-element ul li a',{
+    opacity: 1,
+    bottom: 0,
+    duration: 0.32,
+    stagger: 0.15,
+    ease: "power1.out"
+  },"-=0.2")
+
+  .to('#overlay .information-element ul li a',{
+    opacity: 1,
+    bottom: 0,
+    duration: 0.32,
+    stagger: 0.15,
+    ease: "power1.out"
+  },"-=0.2")
+
+  .reverse();
+}
+
+openNav()
+
+var btn = $('.top-button');
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, 'slow');
+});
+
+gsap.registerPlugin(ScrollTrigger);  
+gsap.utils.toArray(".block-image").forEach(function(container) {
+    let image = container.querySelector(" img");
+  
+    let tr = gsap.timeline({
+        scrollTrigger: {
+          trigger: container,
+          scrub: true,
+          pin: false,
+        },
+      }); 
+      tr.from(image, {
+        yPercent: -40,
+        ease: "none",
+      }).to(image, {
+        yPercent: 40,
+        ease: "none",
+      }); 
+});
+
+// Επιβεβαιώνουμε ότι το DOM έχει φορτωθεί
+window.addEventListener('DOMContentLoaded', () => {
+  // Επιλέγουμε το στοιχείο που θέλουμε να κάνουμε animate
+  const targetElement = document.querySelector('#menuholder .grid-element-center .mobile-logo img:last-child');
+  const targetElement1 = document.querySelector('#menuholder .grid-element-center .mobile-logo img:first-child');
+
+  // Αρχικοποιούμε το GSAP animation
+  const tl = gsap.timeline({ paused: true });
+
+  // Ορίζουμε το animation όταν scrollάρει πάνω από 100px
+  tl.to(targetElement, {
+	  'display': 'none',
+    y: -20, // Μετακίνηση προς τα πάνω κατά 50px
+    opacity: 0, // Αλλαγή opacity σε 0
+    duration: 0.2, // Διάρκεια animation
+    ease: "power2.out", // Είδος easing
+  });
+
+  tl.to(targetElement1, {
+    y:0,
+    width:"80px",
+    duration: 0.4, // Διάρκεια animation
+    ease: "power2.out", // Είδος easing
+  });  
+
+  // Προσθέτουμε event listener για το scroll
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+      // Παίζουμε το animation αν το scroll είναι πάνω από 100px
+      tl.play();
+    } else {
+      // Επιστρέφουμε στην αρχική κατάσταση αν το scroll είναι κάτω από 100px
+      tl.reverse();
+    }
+  });
+});
+
+
+const blurDivs = document.querySelectorAll("#homepage .grid-hero-home .block-image")
+blurDivs.forEach(div => {
+  const img = div.querySelector("img")
+
+  function loaded() {
+    div.classList.add("loaded")
+  }
+
+  if(img.complete){
+    loaded()
+  } else {
+    img.addEventListener("load",loaded)
+  }
+})
+
+const blurDivsMob = document.querySelectorAll("#homepage .grid-hero-home .block-image-mobile")
+blurDivsMob.forEach(div => {
+  const img = div.querySelector("img")
+
+  function loaded() {
+    div.classList.add("loaded")
+  }
+
+  if(img.complete){
+    loaded()
+  } else {
+    img.addEventListener("load",loaded)
+  }
+})
