@@ -1,0 +1,24 @@
+.view{
+    text-align: center;
+    margin-top: 100px;
+}
+.view button{
+    background-color:  rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255,0);
+    border-radius: 30px;
+    padding: 12px 0px;
+}
+.view button:hover{
+    cursor: pointer;
+    background-color: black;
+}
+.view button:hover a{
+    color: white;
+}
+.view button a{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 12px 50px;
+}

@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import "../villas/villas.css";
-
+import Link from "next/link";
 export default function ComponentVillas() {
   useEffect(() => {
     const sliderVila = document.querySelector(".sliderVila") as HTMLElement | null;
@@ -90,10 +90,10 @@ export default function ComponentVillas() {
             <p>Choose Villa:</p>
             <div className="btn">
               <button>
-                <a href="#">ANTHEA</a>
+                <Link href={`/page/anthea`}>ANTHEA</Link>
               </button>
               <button>
-                <a href="#">GALINI</a>
+                <Link href={`/page/galini`}>GALINI</Link>
               </button>
             </div>
           </div>
@@ -155,11 +155,6 @@ export default function ComponentVillas() {
           </div>
           <img id="nextBtnVila" src="/img/left-arrow.svg" alt="" />
         </div>
-      </div>
-      <div className="view">
-        <button>
-          <a href="#">VIEW ALL ROOMS</a>
-        </button>
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 'use client'
 import { useEffect } from "react";
 import "../suites/suites.css";
-
+import Link from "next/link";
 export default function ComponentSuites() {
   useEffect(() => {
     const slider = document.querySelector(".slider") as HTMLElement | null;
@@ -86,10 +86,10 @@ export default function ComponentSuites() {
             <p>Choose A Suite:</p>
             <div className="btn">
               <button>
-                <a href="#">GAEA</a>
+                <Link href={`/page/gaea`}>GAEA</Link>
               </button>
               <button>
-                <a href="#">ELEA</a>
+                <Link href={`/page/elea`}>ELEA</Link>
               </button>
             </div>
           </div>

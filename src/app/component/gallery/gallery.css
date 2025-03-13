@@ -1,16 +1,8 @@
-.containerGallery{
-    padding: 0px 20px;
-}
-.containerGallery h1{
-    font-size: 36px;
-    line-height: 48px;
-    font-weight: 200;
-}
+
 .gallery {
     column-count: 4;
     column-gap: 20px;
     width: 100%;
-    margin-top: 50px;
 }
 .gallery .item {
     width: 100%;

@@ -1,4 +1,5 @@
 import '../suitesRoom/suitesRoom.css'
+import Link from 'next/link'
 export default function ComponentSuitesRoom(){
     return(
         <>
@@ -46,12 +47,16 @@ export default function ComponentSuitesRoom(){
                 <p>Choose Suite:</p>
                 <div className='suitesChild'>
                     <div className="item-1">
-                        <img src="/img/monalia-parga-suites-8.webp" alt="" />
-                        <button><a href="#">GAEA</a></button>
+                      <div className="img">
+                      <img src="/img/monalia-parga-suites-8.webp" alt="" />
+                      </div>
+                        <button><Link href="/page/gaea">GAEA</Link></button>
                     </div>
-                    <div className='item-2'>
-                        <img src="/img/monalia-parga-suites-8.webp" alt="" />
-                        <button><a href="#">ELEA</a></button>
+                    <div className="item-1">
+                      <div className="img">
+                      <img src="/img/monalia-parga-suites-8.webp" alt="" />
+                      </div>
+                        <button><Link href="/page/elea">ELEA</Link></button>
                     </div>
                 </div>
             </div>

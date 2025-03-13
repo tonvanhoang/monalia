@@ -16,7 +16,7 @@ export default function PageLocation(){
             </div>
         </div>
         <div className='navigation'>
-            <li><Link href={`/`}>HOME</Link> &gt; <span>ROOM</span></li>
+            <li><Link href={`/`}>HOME</Link> &gt; <span>LOCATION</span></li>
         </div>
         <ComponentLocationChild/>
         <ComponentAxerontasRiver/>

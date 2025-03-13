@@ -1,4 +1,5 @@
 import '../location/location.css'
+import Link from 'next/link'
 export default function ComponentLocation(){
     return(
         <>
@@ -11,7 +12,7 @@ export default function ComponentLocation(){
         <div className="bottom">
             <div className="item-1">
                 <p>Its natural beauty, featuring azure beaches, colorful houses, and narrow alleys, creates a fairytale setting for relaxation. The view of the Ionian Sea, highlighted by the charming islet of Panagia and the Venetian castle standing proud atop the town, invites visitors to immerse themselves in the area’s history and traditions.</p>
-                <button><a href="#">MORE</a></button>
+                <button><Link href={`/page/location`}>MORE</Link></button>
             </div>
             <div className="item-2">
                 <img src="/img/summer-vacations-parga-preveza.webp" alt=""/>

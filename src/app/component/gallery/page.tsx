@@ -2,11 +2,7 @@ import '../gallery/gallery.css'
 export default function ComponentGallery(){
     return(
         <>
-       <div className="containerGallery">
-        <div>
-            <h1>GALLERY</h1>
-            <hr />
-        </div>
+       
        <div className="gallery">
             <div className='item'>
                 <img src="/img/monalia-parga-suites-14.webp" alt="" />
@@ -63,7 +59,6 @@ export default function ComponentGallery(){
                 <img src="/img/monalia-parga-suites-20.webp" alt="" />
             </div>
         </div>
-       </div>
         </>
     )
 }
