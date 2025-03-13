@@ -1,0 +1,23 @@
+.nominee {
+    position: fixed;
+    background-color: black;
+    top: 50%;
+    right: 2%;
+    transform: translate(50%, -50%) rotate(-90deg); 
+    z-index: 10000;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+    align-items: center;
+}
+
+.nominee a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.nominee a:last-child{
+    transform: rotate(90deg);
+    font-size: 20px;
+}

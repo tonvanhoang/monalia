@@ -30,15 +30,15 @@
 .section-5 .left .btn button{
     background-color: rgba(255, 255, 255,0);
     border-radius: 30px;
-    padding: 12px 50px;
+    padding: 12px 0px;
     margin-top: 40px;
-    border: 1px solid black; /* Added border */
-    transition: background-color 0.3s, color 0.3s; /* Added transition */
+    border: 1px solid black; 
+    transition: all 0.3s;
 }
 .section-5 .left .btn button:hover{
     cursor: pointer;
     background-color: black;
-    color: white; /* Added color change on hover */
+    color: white; 
 }
 .section-5 .left .btn button:hover a{
     color: white;
@@ -49,6 +49,7 @@
     text-decoration: none;
     color: black;
     font-weight: 500;
+    padding: 12px 50px;
 }
 .section-5 .right{
     width: 60%;
@@ -152,27 +153,4 @@
 }
 .section-5 .element-images button:hover {
     background-color: gray;
-}
-.view{
-    text-align: center;
-    margin-top: 100px;
-}
-.view button{
-    background-color:  rgba(255, 255, 255, 0.4);
-    background-color: rgba(255, 255, 255,0);
-    border-radius: 30px;
-    padding: 12px 50px;
-}
-.view button:hover{
-    cursor: pointer;
-    background-color: black;
-}
-.view button:hover a{
-    color: white;
-}
-.view button a{
-    font-size: 12px;
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
 }

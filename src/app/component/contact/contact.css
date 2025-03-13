@@ -29,33 +29,41 @@
 .section-8 .item-2 .col1{
     width: 45%;
 }
+.section-8 .item-2 .col1 .contact hr,
+.section-8 .item-2 .col2 .menu hr,
+.section-8 .item-2 .col3 .socialMedia hr,
+.section-8 .item-2 .hiddenCol .none hr{
+    margin: 0;
+    margin-top: 10px;
+}
 .section-8 .item-2 .col1 .containerTitle{
     display: flex;
+    padding-top: 30px;
     width: 100%;
 }
 .section-8 .item-2 .col1 .containerTitle hr{
-    margin: 5px 0px;
+    margin: 10px 0px;
 }
 .section-8 .item-2 .col1 .containerTitle .direct{
-    margin-top: 50px;
+    margin-top: 60px;
 }
-.section-8 .item-2 .col1 .containerTitle .titleLeft{
+.section-8 .item-2 .col1 .containerTitle .titleLeftContact{
     width: 50%;
 }
-.section-8 .item-2 .col1 .containerTitle .titleLeft p{
+.section-8 .item-2 .col1 .containerTitle .titleLeftContact p{
     font-size: 16px;
     font-weight: 200;
 }
-.section-8 .item-2 .col1 .containerTitle .titleRight{
+.section-8 .item-2 .col1 .containerTitle .titleRightContact{
     width: 50%;
 }
-.section-8 .item-2 .col1 .containerTitle .titleRight .item div{
+.section-8 .item-2 .col1 .containerTitle .titleRightContact .item div{
     display: flex;
 }
-.section-8 .item-2 .col1 .containerTitle .titleRight .item div img {
+.section-8 .item-2 .col1 .containerTitle .titleRightContact .item div img {
     margin-right: 20px;
 }
-.section-8 .item-2 .col1 .containerTitle .titleRight .item div p{
+.section-8 .item-2 .col1 .containerTitle .titleRightContact .item div p{
     font-size: 16px;
     font-weight: 200;
 }
@@ -70,6 +78,7 @@
 }
 .section-8 .item-2 .col2 ul,.section-8 .item-2 .col3 ul{
     padding: 0px;
+    padding-top: 30px;
 }
 .section-8 .item-2 .col2 ul li,.section-8 .item-2 .col3 ul li{
     list-style: none;
@@ -99,8 +108,8 @@
 .section-8 .item-3 .top button:first-child{
     background-color: rgba(255, 255, 255,0);
     border-radius: 30px;
-    padding: 12px 50px;
     margin-top: 40px;
+    padding: 10px 0px;
 }
 .section-8 .item-3 .top button:first-child:hover{
     cursor: pointer;
@@ -113,13 +122,14 @@
     font-size: 12px;
     text-decoration: none;
     color: black;
+    padding: 10px 50px;
     font-weight: 500;
 }
 .section-8 .item-3 .top button:last-child{
     background-color: black;
     border-radius: 30px;
-    padding: 12px 50px;
     margin-top: 40px;
+    padding:10px 0px ;
 }
 .section-8 .item-3 .top button:last-child:hover{
     cursor: pointer;
@@ -130,6 +140,8 @@
     text-decoration: none;
     color: white;
     font-weight: 500;
+    padding: 12px 50px;
+
 }
 .section-8 .item-3 .top .btn{
     display: flex;
@@ -152,4 +164,7 @@
 .section-8 .item-3 .bottom p a{
     text-decoration: none;
     color: black;
+}
+.section-8 .item-3 .bottom p a:hover{
+    opacity: 0.7;
 }

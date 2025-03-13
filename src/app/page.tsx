@@ -6,6 +6,7 @@ import ComponentSuites from "./component/suites/page";
 import ComponentVillas from "./component/villas/villas";
 import ComponentSlideIMG from "./component/slideIMG/page";
 import ComponentLocation from "./component/location/page";
+import ComponentButtonAllRoom from "./component/allroom/page";
 export default function Home() {
   return (
     <>
@@ -15,6 +16,7 @@ export default function Home() {
   <ComponentRoom/>
   <ComponentSuites/>
   <ComponentVillas/>
+  <ComponentButtonAllRoom/>
   <ComponentSlideIMG/>
   <ComponentLocation/>
     </>

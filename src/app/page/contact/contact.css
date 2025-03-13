@@ -1,36 +1,9 @@
-.headerContact{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
-.headerContact img{
-    width: 100%;
-    height: 100vh;
-}
-.headerContact .content{
-    width: 100%;
-    padding: 20px;
-    top: 90%;
-    left: 50%;
-    position: absolute;
-    display: flex;
-    align-items: flex-end;
-    transform: translate(-50%,-50%);
-    justify-content: space-between;
-}
-.headerContact .content h1{
-    font-size: 120px;
-    font-weight: 200;
-    line-height: 120px;
-}
-.headerContact .content p{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+#containerContact{
+    margin-top: 320px;
 }
 /*  */
 .navigation {
-    padding:40px 20px ;
+    padding:60px 20px ;
 }
 .navigation li{
     list-style: none;

@@ -6,17 +6,18 @@ export default function PageGallery(){
     return(
         <>
         <ComponentNav/>
-        <div className="headerLocation">
-            <img src="/img/monalia-parga-suites-8.webp" alt="" />
-            <div className='content'>
-                <h1>GALLERY</h1>
-                <p>ROLL DOWN</p>
-            </div>
-        </div>
+        <div className="containerGallery">
         <div className='navigation'>
-            <li><Link href={`/`}>HOME</Link> &gt; <span>ROOM</span></li>
+            <li><Link href={`/`}>HOME</Link> &gt; <span>GALLERY</span></li>
+        </div>
+        <div className="containerTitle">
+        <div className='title'>
+            <h1>GALLERY</h1>
+            <hr />
         </div>
         <ComponentGallery/>
+        </div>
+        </div>
         </>
     )
 }

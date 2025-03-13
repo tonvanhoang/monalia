@@ -1,25 +1,25 @@
-.containerSuitesRoom{
+.containervillasRoom{
     width: 100%;
     padding:0px 20px;
     margin-top: 100px;
 }
-.suites{
+.villas{
     display: flex;
     width: 100%;
     gap: 20px;
 }
-.containerSuitesRoom h1{
+.containervillasRoom h1{
     font-size: 36px;
     line-height: 48px;
     font-weight: 200;
 }
-.containerSuitesRoom hr{
+.containervillasRoom hr{
     margin-bottom: 40px;
 }
-.suites .suitesLeft{
+.villas .villasLeft{
     width: 40%;
 }
-.suites .suitesLeft h3{
+.villas .villasLeft h3{
     font-size: 24px;
     font-weight: 200;
     line-height: 36px;
@@ -43,8 +43,8 @@
 }
 .containerTitle .titleRight .item div img{
     margin-right: 20px;
-    width: 25px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
 }
 .containerTitle .titleRight .item div p{
     font-size: 16px;
@@ -52,52 +52,55 @@
 }
 .containerTitle .titleRight .item hr{
     margin: 0px;
-    margin-bottom: 10px;
+    margin: 10px 0px;
 }
-.suites .suitesRight{
+.villas .villasRight{
     width: 60%;
 }
-.suites .suitesRight .suitesChild{
+.villas .villasRight .villasChild{
     display: flex;
     width: 100%;
     gap: 10px;
 }
-.suites .suitesRight .suitesChild .item-1{
+.villas .villasRight .villasChild .item-1,
+.villas .villasRight .villasChild .item-2{
     width: 50%;
-    height: 45vh;
 }
-.suites .suitesRight .suitesChild .item-2{
-    width: 50%;
+.villas .villasRight .villasChild .item-1 .img,
+.villas .villasRight .villasChild .item-2 .img{
+    width: 100%;
     height: 45vh;
+    position: relative;
+    overflow: hidden;
 }
-.suites .suitesRight .suitesChild img{
+.villas .villasRight .villasChild img{
     width: 100%;
     height: 100%;
     border-radius: 10px;
     transition: all 0.5s;
+    object-fit: cover;
 }
-.suites .suitesRight .suitesChild img:hover{
+.villas .villasRight .villasChild img:hover{
     cursor: pointer;
     transform: scale(1.1);
-    object-fit: cover;
-    overflow: hidden;
 }
-.suites .suitesRight .suitesChild button{
+.villas .villasRight .villasChild button{
     margin-top: 20px;
     border: 1px solid black;
     background-color: rgba(255, 255, 255, 0);
-    padding: 7px 50px;
+    padding: 7px 0px;
     border-radius: 30px;
     transition: all 0.5s;
 }
-.suites .suitesRight .suitesChild button:hover{
+.villas .villasRight .villasChild button:hover{
     background-color: black;
 }
-.suites .suitesRight .suitesChild button a{
+.villas .villasRight .villasChild button a{
     font-weight: 200;
     color: black;
     text-decoration: none;
+    padding: 7px 50px;
 }
-.suites .suitesRight .suitesChild button:hover a{
+.villas .villasRight .villasChild button:hover a{
     color: white;
 }

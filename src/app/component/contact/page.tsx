@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import '../contact/contact.css'
 export default function ComponentContact(){
     return(
@@ -9,10 +10,12 @@ export default function ComponentContact(){
         </div>
         <div className="item-2">
             <div className="col1">
-                <p>CONTACT</p>
-                <hr/>
+                <div className='contact'>
+                    <p>CONTACT</p>
+                    <hr/>
+                </div>
                 <div className="containerTitle">
-                    <div className="titleLeft">
+                    <div className="titleLeftContact">
                         <div>
                             <p>POSTAL:</p>
                             <hr/>
@@ -22,7 +25,7 @@ export default function ComponentContact(){
                             <hr/>
                         </div>
                     </div>
-                    <div className="titleRight">
+                    <div className="titleRightContact">
                         <div className="item">
                             <div>
                                 <img src="/img/MapPin(1).svg" alt=""/>
@@ -48,28 +51,34 @@ export default function ComponentContact(){
                 </div>
             </div>
             <div className="hiddenCol">
+                <div className='none'>
                 <p>MENU</p>
                 <hr/>
+                </div>
             </div>
             <div className="col2">
-                <p>MENU</p>
-                <hr/>
+                <div className='menu'>
+                    <p>MENU</p>
+                    <hr/>
+                </div>
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">MONOALIA</a></li>
-                    <li><a href="#">ROOMS</a></li>
-                    <li><a href="#">GALLERY</a></li>
-                    <li><a href="#">LOCATION</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><Link href="/">HOME</Link></li>
+                    <li><Link href="/page/monalia">MONALIA</Link></li>
+                    <li><Link href="/page/room">ROOMS</Link></li>
+                    <li><Link href="/page/gallery">GALLERY</Link></li>
+                    <li><Link href="/page/location">LOCATION</Link></li>
+                    <li><Link href="/page/contact">CONTACT</Link></li>
 
                 </ul>
             </div>
             <div className="col3">
-                <p>SOCIAL MEDIA</p>
-                <hr/>
+                <div className='socialMedia'>
+                    <p>SOCIAL MEDIA</p>
+                    <hr/>
+                </div>
                 <ul>
-                    <li><a href="#">FACEBOOK</a></li>
-                    <li><a href="#">INSTAGRAM</a></li>
+                    <li><Link href="#">FACEBOOK</Link></li>
+                    <li><Link href="#">INSTAGRAM</Link></li>
                 </ul>
             </div>
         </div>
@@ -77,13 +86,13 @@ export default function ComponentContact(){
             <div className="top">
                 <img src="/img/Logo-text.svg" alt=""/>
                 <div className="btn">
-                    <button><a href="#">GET DIRECTIONS</a></button>
-                    <button><a href="#">BOOK NOW</a></button>
+                    <button><Link href="https://www.google.com/maps/place/MONALIA+Parga+Luxury+Suites/@39.2890255,20.4349758,17z/data=!3m1!4b1!4m9!3m8!1s0x135c7b0ba480b5c7:0x2654a5d066d75368!5m2!4m1!1i2!8m2!3d39.2890255!4d20.4375561!16s%2Fg%2F11y67sft60?entry=tts&g_ep=EgoyMDI0MTIxMS4wIPu8ASoJLDEwMjExMjMzSAFQAw%3D%3D">GET DIRECTIONS</Link></button>
+                    <button><Link href="https://www.booking.com/hotel/gr/monalia-suites.vi.html?label=gen173rf-1BCAsoXEIObW9uYWxpYS1zdWl0ZXNICFgDaPQBiAEBmAEquAEXyAEM2AEB6AEBiAIBogIKbW9uYWxpYS5ncqgCA7gC0aPKvgbAAgHSAiQzMTY4MTZkOC05ZTk1LTQyYmYtYmYwYy1jNDVkNzUzYjMyMDfYAgXgAgE&sid=a94181fc0f05fe5dfde1c4c835da487c&dist=0&keep_landing=1&sb_price_type=total&type=total&">BOOK NOW</Link></button>
                 </div>
             </div>
             <hr/>
             <div className="bottom">
-                <p>© 2025 MONALIA PARGA RESORT SUITES.<a href="">Terms & Conditions</a></p>
+                <p>© 2025 MONALIA PARGA RESORT SUITES.<Link href="/page/termsConditions">Terms & Conditions</Link></p>
                 <p>WELLDESIGNED BY IFRAME</p>
             </div>
         </div>

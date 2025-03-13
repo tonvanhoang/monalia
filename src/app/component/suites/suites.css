@@ -30,25 +30,24 @@
 .section-4 .left .btn button{
     background-color: rgba(255, 255, 255,0);
     border-radius: 30px;
-    padding: 12px 50px;
     margin-top: 40px;
-    border: 1px solid black; /* Added border */
-    transition: background-color 0.3s, color 0.3s; /* Added transition */
+    padding: 12px 0px;
+    border: 1px solid black; 
 }
 .section-4 .left .btn button:hover{
     cursor: pointer;
     background-color: black;
-    color: white; /* Added color change on hover */
+    color: white;
 }
 .section-4 .left .btn button:hover a{
     color: white;
-    text-decoration: none;
 }
 .section-4 .left .btn button a{
     font-size: 12px;
     text-decoration: none;
     color: black;
     font-weight: 500;
+    padding: 12px 50px;
 }
 .section-4 .right{
     width: 60%;

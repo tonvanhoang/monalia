@@ -1,12 +1,13 @@
 import '../villaRoom/vilaroom.css'
+import Link from 'next/link'
 export default function ComponentVilaRoom(){
     return(
         <>
-        <div className="containerSuitesRoom">
+        <div className="containervillasRoom">
         <h1>Villas</h1>
         <hr />
-        <div className="suites">
-            <div className='suitesLeft'>
+        <div className="villas">
+            <div className='villasLeft'>
                 <h3>
                 The Anthea and Galini Villas offer larger, more luxurious accommodations, ideal for families or groups seeking ultimate comfort and privacy.                </h3>
                 <div className="containerTitle">
@@ -41,16 +42,20 @@ export default function ComponentVilaRoom(){
               </div>
             </div>
             </div>
-            <div className='suitesRight'>
+            <div className='villasRight'>
                 <p>Choose Suite:</p>
-                <div className='suitesChild'>
+                <div className='villasChild'>
                     <div className="item-1">
-                        <img src="/img/monalia-parga-suites-8.webp" alt="" />
-                        <button><a href="#">ANTHEA</a></button>
+                      <div className="img">
+                      <img src="/img/monalia-parga-suites-8.webp" alt="" />                    
+                      </div>
+                        <button><Link href="/page/anthea">ANTHEA</Link></button>
                     </div>
                     <div className='item-2'>
-                        <img src="/img/monalia-parga-suites-8.webp" alt="" />
-                        <button><a href="#">GALINI</a></button>
+                      <div className="img">
+                      <img src="/img/monalia-parga-suites-8.webp" alt="" />                   
+                      </div>
+                        <button><Link href="/page/galini">GALINI</Link></button>
                     </div>
                 </div>
             </div>
