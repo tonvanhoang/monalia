@@ -1,8 +1,10 @@
 .section-3{
     padding: 0px 20px;
-    margin: 100px 0px;
+    padding: 100px 0px;
     position: relative;
     gap: 20px;
+    background-color: rgb(241,232,218);
+    z-index: 1;
 }
 .section-3 h1{
     font-weight: 200;

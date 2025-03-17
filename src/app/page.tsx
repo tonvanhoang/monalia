@@ -7,6 +7,7 @@ import ComponentVillas from "./component/villas/villas";
 import ComponentSlideIMG from "./component/slideIMG/page";
 import ComponentLocation from "./component/location/page";
 import ComponentButtonAllRoom from "./component/allroom/page";
+import './homepage.css'
 export default function Home() {
   return (
     <>

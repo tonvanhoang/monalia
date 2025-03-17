@@ -12,7 +12,7 @@ header .backgroudHeader{
 }
 .grid-hero-home {
     display: flex;
-    height: 60vh;
+    height: 65vh;
     gap: 20px;
     padding: 0px 20px;
     position: absolute;
@@ -50,9 +50,26 @@ header .backgroudHeader{
 @media (max-width: 768px){
     header .backgroudHeader{
         height: 100vh;
+        visibility: hidden;
     }
-    .grid-hero-home{
+    .grid-hero-home {
+        height: 100vh;
+        gap: 0px;
+        padding: 0px;
+        position: fixed;
+        z-index: 1;
+    }
+    .grid-hero-home .item_2 {
+        width: 100%;
+    }
+    .grid-hero-home .item_1,.grid-hero-home .item_3{
         display: none;
+    }
+    header{
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 1;
     }
 }
 @media (min-width: 768px) and (max-width: 1024px){
@@ -62,4 +79,5 @@ header .backgroudHeader{
     .grid-hero-home{
         display: none;
     }
+
 }

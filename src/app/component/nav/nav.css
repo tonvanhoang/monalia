@@ -1,10 +1,18 @@
-nav {
+nav .top{
     padding: 10px 20px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 2;
+}
+nav .imgBottom{
+    padding: 10px 20px;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
 }
 nav .top{
     display: flex;
@@ -12,11 +20,11 @@ nav .top{
 }
 #display-logo {
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  }
-  .hidden {
+}
+.hidden {
     opacity: 0;
     transform: translateY(-20px);
-  }
+}
 #Menu{
     position: fixed;
     top: 0;
@@ -81,7 +89,7 @@ nav .top{
     opacity: 1;
     transform: translateY(0); /* Hiện lên vị trí bình thường */
 }
-.menuChill ul.hide li {
+.menuChill ul li.hide {
     transform: translateY(20px);
     opacity: 0;
 }
@@ -183,14 +191,30 @@ nav .imgBottom img{
 }
 nav .img img:hover{
     cursor: pointer;
+
 }
 /* mobile */
-@media (max-width: 768px){
-    .menuChill .img img{
+/* mobile */
+@media (max-width: 768px) {
+    .menuChill .img img {
         visibility: hidden;
     }
-    nav button:first-child a{
-        padding:0px 20px;
-
+    nav button:first-child a {
+        padding: 0px 20px;
+    }
+    nav .imgTop img {
+        width: 80px;
+        height: 80px;
+        transition: height 0.3s ease-in-out, width 0.3s ease-in-out;
+    }
+    nav .imgTop.scrolled img {
+        width: 50px;
+        height: 50px;
+    }
+    #display-logo {
+        opacity: 1;
+        transform: none;
+        position: relative;
+        z-index: 0; /* Ensure this is lower than any other z-index values */
     }
 }

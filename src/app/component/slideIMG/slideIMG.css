@@ -1,55 +1,91 @@
-.section-6{
-    margin-top: 100px;
+.section-6 {
+    padding-top: 100px;
+    z-index: 1;
+    background-color: rgb(241,232,218);
+    position: relative;
 }
-.section-6 #carouselExampleCaptions .carousel-inner{
+
+.section-6 #carouselExampleCaptions .carousel-inner {
     width: 100%;
     height: 100vh;
-    position:relative;
+    position: relative;
 }
-.section-6 #carouselExampleCaptions .carousel-inner .carousel-item{
+
+.section-6 #carouselExampleCaptions .carousel-inner .carousel-item {
     height: 100vh;
 }
-.section-6 #carouselExampleCaptions .carousel-inner .carousel-item img{
+
+.section-6 #carouselExampleCaptions .carousel-inner .carousel-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     background-position: center;
 }
+
 .section-6 #carouselExampleCaptions .carousel-indicators {
     margin: 0px 20px;
     margin-bottom: 600px;
     display: block;
 }
-.section-6 #carouselExampleCaptions .carousel-indicators .button{
+
+.section-6 #carouselExampleCaptions .carousel-indicators .button {
     display: flex;
     justify-content: space-between;
     padding: 0;
     list-style: none;
-    width: 100%; 
+    width: 100%;
 }
-.section-6 #carouselExampleCaptions .carousel-indicators h1{
+
+.section-6 #carouselExampleCaptions .carousel-indicators h1 {
     font-size: 42px;
     color: white;
     font-weight: 200;
 }
+
+/* Các button trong indicators */
 .section-6 #carouselExampleCaptions .carousel-indicators button {
-    flex-grow: 1; 
-    height: 5px; 
-    background-color: #ccc; 
+    flex-grow: 1;
+    height: 5px;
+    background-color: #ccc;
     border: none;
     border-radius: 5px;
-    margin: 0 2px; 
-    transition: background-color 0.3s ease;
+    margin: 0 2px;
+    position: relative;
+    overflow: hidden;
 }
-@media (max-width: 768px){
-    .section-6 #carouselExampleCaptions .carousel-inner .carousel-item img{
+
+/* Hiệu ứng chạy thời gian */
+.section-6 #carouselExampleCaptions .carousel-indicators button.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background-color: white;
+    animation: progressBar 3s linear forwards;
+}
+
+@keyframes progressBar {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-6 #carouselExampleCaptions .carousel-inner .carousel-item img {
         height: 100vh;
     }
+
     .section-6 #carouselExampleCaptions .carousel-indicators {
         margin-bottom: 80vh;
     }
 }
-@media (min-width: 768px) and (max-width: 1024px){
+
+@media (min-width: 768px) and (max-width: 1024px) {
     .section-6 #carouselExampleCaptions .carousel-indicators {
         margin-bottom: 80vh;
     }

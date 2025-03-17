@@ -1,0 +1,6 @@
+/* mobile */
+@media (max-width: 768px){
+    #display-logo {
+        display: block;
+    }
+}

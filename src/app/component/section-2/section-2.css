@@ -1,10 +1,13 @@
 .section-2{
     padding: 0px 20px;
-    margin-top: 100px;
+    padding-top: 100px;
     display: flex;
     gap: 20px;
     align-items: end;
-    justify-content: space-between
+    justify-content: space-between;
+    background-color: rgb(241,232,218);
+    position: relative;
+    z-index: 1;
 }
 .section-2 .item-1{
     width: 35%;
@@ -63,7 +66,7 @@
 @media (max-width: 768px){
     .section-2{
         display: block;
-        margin-top: 50px;
+        padding-top: 50px;
     }
     .section-2 .item-1{
         width: 100%;
