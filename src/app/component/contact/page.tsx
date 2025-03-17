@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import '../contact/contact.css'
+import ComponentBookNow from '../booknow/page'
 export default function ComponentContact(){
     return(
         <>
@@ -56,7 +57,8 @@ export default function ComponentContact(){
                 <hr/>
                 </div>
             </div>
-            <div className="col2">
+           <div className='link'>
+           <div className="col2">
                 <div className='menu'>
                     <p>MENU</p>
                     <hr/>
@@ -81,13 +83,14 @@ export default function ComponentContact(){
                     <li><Link href="#">INSTAGRAM</Link></li>
                 </ul>
             </div>
+           </div>
         </div>
         <div className="item-3">
             <div className="top">
                 <img src="/img/Logo-text.svg" alt=""/>
                 <div className="btn">
                     <button><Link href="https://www.google.com/maps/place/MONALIA+Parga+Luxury+Suites/@39.2890255,20.4349758,17z/data=!3m1!4b1!4m9!3m8!1s0x135c7b0ba480b5c7:0x2654a5d066d75368!5m2!4m1!1i2!8m2!3d39.2890255!4d20.4375561!16s%2Fg%2F11y67sft60?entry=tts&g_ep=EgoyMDI0MTIxMS4wIPu8ASoJLDEwMjExMjMzSAFQAw%3D%3D">GET DIRECTIONS</Link></button>
-                    <button><Link href="https://www.booking.com/hotel/gr/monalia-suites.vi.html?label=gen173rf-1BCAsoXEIObW9uYWxpYS1zdWl0ZXNICFgDaPQBiAEBmAEquAEXyAEM2AEB6AEBiAIBogIKbW9uYWxpYS5ncqgCA7gC0aPKvgbAAgHSAiQzMTY4MTZkOC05ZTk1LTQyYmYtYmYwYy1jNDVkNzUzYjMyMDfYAgXgAgE&sid=a94181fc0f05fe5dfde1c4c835da487c&dist=0&keep_landing=1&sb_price_type=total&type=total&">BOOK NOW</Link></button>
+                    <ComponentBookNow/>
                 </div>
             </div>
             <hr/>

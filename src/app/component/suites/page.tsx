@@ -12,9 +12,10 @@ export default function ComponentSuites() {
     if (!slider || !prevBtn || !nextBtn) return;
 
     const totalItems = items.length;
-    const visibleItems = 3;
+    let visibleItems = window.innerWidth <= 768 ? 1 : 3;
     let currentIndex = totalItems;
 
+    // Clone images to create loop effect
     const firstClone = Array.from(items).map((item) => item.cloneNode(true) as HTMLElement);
     const lastClone = Array.from(items).map((item) => item.cloneNode(true) as HTMLElement);
 
@@ -25,6 +26,7 @@ export default function ComponentSuites() {
       const sliderWrapper = document.querySelector(".slider-wrapper") as HTMLElement | null;
       if (!sliderWrapper) return;
 
+      visibleItems = window.innerWidth <= 768 ? 1 : 3;
       const itemWidth = sliderWrapper.clientWidth / visibleItems;
       slider.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
       slider.style.transition = animate ? "transform 0.5s ease-in-out" : "none";
@@ -58,20 +60,15 @@ export default function ComponentSuites() {
       }
     };
 
-    prevBtn.addEventListener("click", prevSlide);
     nextBtn.addEventListener("click", nextSlide);
-
-    let autoSlide = setInterval(nextSlide, 3000);
-
-    slider.addEventListener("mouseenter", () => clearInterval(autoSlide));
-    slider.addEventListener("mouseleave", () => (autoSlide = setInterval(nextSlide, 3000)));
+    prevBtn.addEventListener("click", prevSlide);
 
     window.addEventListener("resize", () => updateSlider(false));
     updateSlider(false);
 
     return () => {
-      prevBtn.removeEventListener("click", prevSlide);
       nextBtn.removeEventListener("click", nextSlide);
+      prevBtn.removeEventListener("click", prevSlide);
       window.removeEventListener("resize", () => updateSlider(false));
     };
   }, []);
@@ -95,9 +92,7 @@ export default function ComponentSuites() {
           </div>
           <div className="right">
             <p>
-              The rooms at Monalia Luxury Suites highlight the essence of elegant and timeless design. The use of
-              natural colors and materials, such as stone, wood, and ceramic objects, creates an authentic
-              Mediterranean ambiance, enhancing the sense of peace and comfort.
+            The Gaea and Elea Suites combine simplicity with masterful design, creating a space that radiates warmth and serenity.
             </p>
             <div className="containerTitle">
               <div className="titleLeft">

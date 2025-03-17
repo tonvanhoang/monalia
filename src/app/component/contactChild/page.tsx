@@ -18,7 +18,7 @@ export default function ComponentContactChild(){
                     <div>
                         <img src="/img/MapPin(1).svg" alt="" />
                         <a>Parga, 48060, Greece</a>
-                        <hr />
+                        <hr className='none' />
                     </div>
                     </div>
                 </div>
@@ -31,12 +31,12 @@ export default function ComponentContactChild(){
                     <div>
                         <img src="/img/EnvelopeSimple.svg" alt="" />
                         <a>info@monalia.gr</a>
-                        <hr />
+                        <hr className='none' />
                     </div>
                     <div>
                         <img src="/img/PhoneCall.svg" alt="" />
                         <a>+30 695 515 4052</a>
-                        <hr />
+                        <hr className='none' />
                     </div>
 
                     </div>
@@ -44,10 +44,10 @@ export default function ComponentContactChild(){
                 <div className="item">
                     <div className='title'>
                         <div>
-                            <p className='none'>CONTACT</p>
+                            <p className='nonemedia'>CONTACT</p>
                             <hr />
                         </div>
-                        <div>
+                        <div className='none'>
                             <p>SOCIAL MEDIA</p>
                         </div>
                     </div>
@@ -55,12 +55,12 @@ export default function ComponentContactChild(){
                     <div>
                     <img className='none' src="/img/PhoneCall.svg" alt="" />
                     <a>FACEBOOK</a>
-                        <hr />
+                        <hr className='none' />
                     </div>
                     <div>
                     <img className='none' src="/img/PhoneCall.svg" alt="" />
                     <a>INSTAGRAM</a>
-                        <hr />
+                        <hr className='none' />
                     </div>
                     </div>
                 </div>

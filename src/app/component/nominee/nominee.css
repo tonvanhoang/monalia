@@ -21,3 +21,8 @@
     transform: rotate(90deg);
     font-size: 20px;
 }
+@media (max-width: 768px){
+    .nominee{
+    display: none;
+    }
+}

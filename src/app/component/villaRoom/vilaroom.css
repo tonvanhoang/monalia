@@ -62,12 +62,10 @@
     width: 100%;
     gap: 10px;
 }
-.villas .villasRight .villasChild .item-1,
-.villas .villasRight .villasChild .item-2{
+.villas .villasRight .villasChild .item-1{
     width: 50%;
 }
-.villas .villasRight .villasChild .item-1 .img,
-.villas .villasRight .villasChild .item-2 .img{
+.villas .villasRight .villasChild .item-1 .img{
     width: 100%;
     height: 45vh;
     position: relative;
@@ -103,4 +101,29 @@
 }
 .villas .villasRight .villasChild button:hover a{
     color: white;
+}
+@media (max-width: 768px){
+    .villas{
+        display: block;
+    }
+    .villas .villasLeft{
+        width: 100%;
+    }
+    .villas .villasRight{
+        width: 100%;
+    }
+    .villas .villasRight .villasChild{
+        display: block;
+        width: 100%;
+        gap: 10px;
+    }
+    .villas .villasRight .villasChild .item-1{
+        margin-top: 50px;
+        width: 100%;
+}
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .villas .villasRight .villasChild .item-1 .img{
+        height: 15vh;
+    }
 }

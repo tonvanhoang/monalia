@@ -5,7 +5,7 @@
 }
 .headerAnthea img{
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 .headerAnthea .content{
     width: 100%;
@@ -22,6 +22,7 @@
     font-size: 120px;
     font-weight: 200;
     line-height: 120px;
+    margin: 0px;
 }
 .headerAnthea .content p{
     font-size: 16px;
@@ -44,4 +45,13 @@
 }
 .navigation li a:hover{
     opacity: 0.7;
+}
+@media (max-width: 768px){
+    .headerAnthea .content h1{
+        font-size: 80px;
+        line-height: 120px;
+    }
+    .headerAnthea{
+        height: 75vh;
+    }
 }

@@ -5,7 +5,7 @@
 }
 .headerRoom img{
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 .headerRoom .content{
     width: 100%;
@@ -27,6 +27,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    margin: 0px;
 }
 /*  */
 .navigation {
@@ -53,4 +54,16 @@
     line-height: 48px;
     font-weight: 200;
     margin: 0;
+}
+@media (max-width: 768px){
+   .headerRoom{
+        height: 75vh;
+    }
+   .headerRoom .content h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+   .headerRoom .content{
+        top: 92%;
+    }
 }

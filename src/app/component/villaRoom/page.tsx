@@ -51,7 +51,7 @@ export default function ComponentVilaRoom(){
                       </div>
                         <button><Link href="/page/anthea">ANTHEA</Link></button>
                     </div>
-                    <div className='item-2'>
+                    <div className='item-1'>
                       <div className="img">
                       <img src="/img/monalia-parga-suites-8.webp" alt="" />                   
                       </div>
