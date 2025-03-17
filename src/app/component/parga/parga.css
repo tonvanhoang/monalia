@@ -49,7 +49,7 @@
 }
 
 .element-images .slider .item {
-    width: calc(100% / 3); /* Adjusted width to show 3 items */
+    width: calc(100% / 3); 
     height: 50vh;
     flex-shrink: 0;
     max-width: 100%;
@@ -93,4 +93,26 @@
 }
 .element-images button:hover {
     background-color: gray;
+}
+@media (max-width: 768px){
+    .parge .content{
+        display: block;
+        padding-top: 20px;
+    }
+    .parge .left{
+        width: 0%;
+    }
+    .parge .right{
+        width: 100%;
+    }
+    .element-images .slider .item {
+        width: calc(100% / 1); /* Adjusted width to show 3 items */
+        height: 40vh;
+
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .element-images .slider .item {
+        height: 20vh;
+    }
 }

@@ -1,14 +1,18 @@
 import '../gaea&elea/gaea&elea.css'
 import ComponentGallery from "../gallery/page"
+import ComponentBookNow from '../booknow/page'
 export default function ComponentGaeaElea(){
     return(
         <>
         <div className="title">
             <p>The Gaea Suite combine simplicity with masterful design, creating a space that radiates warmth and serenity.</p>
         </div>
+        <div className="containerGaea">
         <div className="content-1">
             <p>Featuring an open-plan layout that incorporates the bedroom, living area, and kitchen, these suites provide a welcoming and comfortable space adorned with high-quality natural materials.</p>
             <span>Carefully curated details in ceramics and wooden elements enrich the space’s character. Outside, the covered seating area and private pool offer moments of enjoyment and relaxation, ideal for gazing at the views and feeling at one with the surroundings.</span>
+        </div>
+        <ComponentBookNow/>
         </div>
         <div className='containerRooms'>
             <div className="containerLeft">

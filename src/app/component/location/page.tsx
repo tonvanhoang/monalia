@@ -14,7 +14,8 @@ export default function ComponentLocation(){
                 <p>Its natural beauty, featuring azure beaches, colorful houses, and narrow alleys, creates a fairytale setting for relaxation. The view of the Ionian Sea, highlighted by the charming islet of Panagia and the Venetian castle standing proud atop the town, invites visitors to immerse themselves in the area’s history and traditions.</p>
                 <button><Link href={`/page/location`}>MORE</Link></button>
             </div>
-            <div className="item-2">
+           <div className="img-bottom">
+           <div className="item-2">
                 <img src="/img/summer-vacations-parga-preveza.webp" alt=""/>
             </div>
             <div className="item-3">
@@ -22,6 +23,7 @@ export default function ComponentLocation(){
                     <source type="video/mp4" src="https://monalia.gr/wp-content/themes/monalia/1439100_Aerial_Coast_1920x1080.mp4"/>
                  </video>
             </div>
+           </div>
         </div>
     </div>
         </>

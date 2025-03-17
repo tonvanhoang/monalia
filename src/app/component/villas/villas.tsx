@@ -13,10 +13,10 @@ export default function ComponentVillas() {
     if (!sliderVila || !prevBtn || !nextBtn) return;
 
     const totalItemVilas = itemVilas.length;
-    const visibleItemVilas = 3; // Số ảnh hiển thị cùng lúc
+    let visibleItemVilas = window.innerWidth <= 768 ? 1 : 3;
     let currentIndex = totalItemVilas;
 
-    // Clone ảnh đầu & cuối để tạo hiệu ứng vòng lặp
+    // Clone images to create loop effect
     const firstClone = Array.from(itemVilas).map((itemVila) => itemVila.cloneNode(true) as HTMLElement);
     const lastClone = Array.from(itemVilas).map((itemVila) => itemVila.cloneNode(true) as HTMLElement);
 
@@ -26,7 +26,8 @@ export default function ComponentVillas() {
     const updateSliderVila = (animate = true) => {
       const sliderVilaWrapper = document.querySelector(".sliderVila-wrapper") as HTMLElement | null;
       if (!sliderVilaWrapper) return;
-      
+
+      visibleItemVilas = window.innerWidth <= 768 ? 1 : 3;
       const itemVilaWidth = sliderVilaWrapper.clientWidth / visibleItemVilas;
       sliderVila.style.transform = `translateX(-${currentIndex * itemVilaWidth}px)`;
       sliderVila.style.transition = animate ? "transform 0.5s ease-in-out" : "none";
@@ -62,13 +63,6 @@ export default function ComponentVillas() {
 
     nextBtn.addEventListener("click", nextSlide);
     prevBtn.addEventListener("click", prevSlide);
-
-    // Auto slide mỗi 3 giây
-    let autoSlide = setInterval(nextSlide, 3000);
-
-    // Dừng auto khi hover vào sliderVila
-    sliderVila.addEventListener("mouseenter", () => clearInterval(autoSlide));
-    sliderVila.addEventListener("mouseleave", () => (autoSlide = setInterval(nextSlide, 3000)));
 
     window.addEventListener("resize", () => updateSliderVila(false));
     updateSliderVila(false);

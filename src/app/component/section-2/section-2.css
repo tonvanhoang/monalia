@@ -1,14 +1,14 @@
 .section-2{
     padding: 0px 20px;
     margin-top: 100px;
-    height: 90vh;
     display: flex;
     gap: 20px;
     align-items: end;
+    justify-content: space-between
 }
 .section-2 .item-1{
-    width: 40%;
-    height: 82%;
+    width: 35%;
+    height: 75vh;
 }
 .section-2 .item-1 p{
     font-size: 16px;
@@ -21,6 +21,8 @@
     border-radius: 30px;
     margin-top: 40px;
     padding: 10px 0px;
+    border: 1px solid black;
+
 }
 .section-2 .item-1 button:hover{
     cursor: pointer;
@@ -36,13 +38,20 @@
 .section-2 .item-1 button:hover a{
     color: white;
 }
+.section-2 .img-bottom{
+    width: 60%;
+    display: flex;
+    gap: 20px;
+    align-items: end;
+    height: 100vh;
+}
 .section-2 .item-2{
-    width: 30%;
-    height: 82%;
+    width: 50%;
+    height: 75%;
 }
 .section-2 .item-3{
-    width: 30%;
-    height: 100%;
+    width: 50%;
+    height: 90%;
 }
 .section-2 img{
     width: 100%;
@@ -50,4 +59,34 @@
     background-position: center;
     object-fit: cover;
     border-radius: 10px;
+}
+@media (max-width: 768px){
+    .section-2{
+        display: block;
+        margin-top: 50px;
+    }
+    .section-2 .item-1{
+        width: 100%;
+        height: auto;
+    }
+    .section-2 .img-bottom{
+        gap: 20px;
+        width: 100%;
+        margin-top: 30px;
+        height: 35vh;
+    }
+    .section-2 .item-2{
+        height: 25vh;
+    }
+    .section-2 .item-3{
+        height: 35vh;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .section-2 .item-1{
+        height: 25vh;
+    }
+    .section-2 .img-bottom{
+    height: 35vh;
+    }
 }

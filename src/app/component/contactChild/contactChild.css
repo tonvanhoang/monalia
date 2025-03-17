@@ -20,6 +20,7 @@
 }
 .containerContactChild .childContact .left .item .title{
     width: 50%;
+    padding: 0px;
 }
 .containerContactChild .childContact .left .item  hr{
     margin: 12px 0px;
@@ -30,7 +31,7 @@
     line-height: 24px;
     margin: 0;
 }
-.containerContactChild .childContact .left .item .none{
+.containerContactChild .childContact .left .item .nonemedia{
     visibility: hidden;
 }
 .containerContactChild .childContact .left .item .content{
@@ -169,4 +170,64 @@
 .googleMap .content iframe{
     width: 100%;
     height: 100%;
+}
+@media (max-width: 768px){
+    .containerContactChild .childContact{
+        display: block;
+    }
+    .containerContactChild .childContact .left{
+        width: 100%;
+    }
+    .containerContactChild .childContact .left .item{
+    display: block;
+    }
+    .containerContactChild .childContact .left .item .title{
+        width: 100%;
+    }
+    .containerContactChild .childContact .left .item .content{
+        width: 100%;
+    }
+    .containerContactChild .childContact .left .item .content .none{
+        display: none;
+    }
+    .containerContactChild .childContact .left .item .nonemedia{
+        visibility: visible;
+        display: none;
+    }
+    .containerContactChild .childContact .left .item .none{
+        display: none;
+        }
+    .containerContactChild .childContact .left .item .content div{
+        margin-top: 10px;
+    }
+    .containerContactChild .childContact .right{
+        width: 100%;
+    }
+    /*  */
+    .containerContactChild .childContact .right form .double-inp{
+        display: block;
+    }
+    .containerContactChild .childContact .right form .double-inp .left{
+        width: 100%;
+    }
+    .containerContactChild .childContact .right form .double-inp .right{
+        width: 100%;
+    }
+    .containerContactChild .childContact .right form{
+        padding-top: 30px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .containerContactChild .childContact{
+        display: block;
+    }
+    .containerContactChild .childContact .left{
+        width: 100%;
+    }
+    .containerContactChild .childContact .right{
+        width: 100%;
+    }
+    .containerContactChild .childContact .left .item .none{
+        visibility: visible;
+    }
 }

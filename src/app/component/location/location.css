@@ -10,18 +10,22 @@
 }
 .section-7 .title{
     margin-top: 40px;
+    padding: 0px;
 }
-
 .section-7 .bottom{
     display: flex;
     align-items: end;
     gap: 20px;
-    height: 90vh;
-
+}
+.section-7 .img-bottom{
+    display: flex;
+    gap: 20px;
+    align-items: end;
+    width: 60%;
 }
 .section-7 .item-1{
     width: 40%;
-    height: 40%;
+    height: 40vh;
     padding-right: 80px;
 }
 .section-7 .item-1 p{
@@ -35,6 +39,7 @@
     border-radius: 30px;
     padding: 12px 0px;
     margin-top: 40px;
+    border: 1px solid black;
 }
 .section-7 .item-1 button:hover{
     cursor: pointer;
@@ -51,13 +56,13 @@
     padding: 12px 50px;
 }
 .section-7 .item-2{
-    width: 30%;
-    height: 88%;
+    width: 50%;
+    height: 73vh;
 }
 .section-7 .item-3 {
     position: relative;
-    width: 30%;
-    height: 100%;
+    width: 50%;
+    height: 88vh;
 }
 
 .section-7 .item-3 video {
@@ -78,4 +83,49 @@
     background-position: center;
     object-fit: cover;
     border-radius: 10px;
+}
+@media (max-width: 768px){
+    .section-7 .bottom{
+        display: block;
+        width: 100%;
+    }
+    .section-7 .img-bottom{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .section-7 .item-1{
+        width: 100%;
+        height: auto;
+        padding: 0px;
+    }
+    .section-7 .item-2, .section-7 .item-3{
+        width: 50%;
+    }
+    .section-7 .item-1 p{
+        margin-top: 50px;
+    }
+    .section-7 .item-2{
+        width: 50%;
+        height: 25vh;
+    }
+    .section-7 .item-3 {
+        position: relative;
+        width: 50%;
+        height: 35vh;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .section-7 .item-1{
+        height: 100%;
+        padding-right: 20px;
+    }
+    .section-7 .item-2{
+        width: 50%;
+        height: 25vh;
+    }
+    .section-7 .item-3 {
+        position: relative;
+        width: 50%;
+        height: 35vh;
+    }
 }

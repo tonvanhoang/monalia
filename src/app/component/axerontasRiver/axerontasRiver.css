@@ -27,3 +27,15 @@
     font-weight: 200;
     margin: 0px;
 }
+@media (max-width: 768px){
+    .axerontasRiver .content{
+        display: flex;
+        padding-top: 20px;
+    }
+    .axerontasRiver .left{
+        width: 0%;
+    }
+    .axerontasRiver .right{
+        width: 100%;
+    }
+}
