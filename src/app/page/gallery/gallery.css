@@ -1,5 +1,9 @@
 .containerGallery{
     margin-top: 320px;
+    position: relative;
+    z-index: 1;
+    background-color: rgb(241,232,218);
+
 }
 /*  */
 .navigation {
@@ -28,7 +32,7 @@
     display: block;
 }
 .containerTitle .title{
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     padding: 0px;
     display: block;
 }
@@ -38,7 +42,7 @@
     font-weight: 200;
 }
 @media (max-width: 768px){
-    .containerTitle{
+    .containerTitle .title{
         display: block;
     }
 }

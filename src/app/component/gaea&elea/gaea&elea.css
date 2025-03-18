@@ -1,10 +1,16 @@
 .title{
     padding:0px 20px;
+    position: relative;
+    z-index: 1;
+    background-color: rgb(241,232,218);
 }
 .containerGaea{
     display: flex;
-    margin-top: 100px;
+    padding-top: 100px;
     justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    background-color: rgb(241,232,218);
 }
 .containerGaea button{
     margin: 0;
@@ -31,10 +37,13 @@
     line-height: 24px;
 }
 .containerRooms {
-    margin-top: 100px;
+    padding-top: 100px;
     display: flex;
     padding: 0px 20px;
     gap: 50px;
+    position: relative;
+    z-index: 1;
+    background-color: rgb(241,232,218);
 }
 .containerRooms .containerLeft{
     width: 50%;
@@ -115,7 +124,10 @@
 /*  */
 .containerPhotoGallery{
     padding: 0px 20px;
-    margin-top: 100px;
+    padding-top: 100px;
+    position: relative;
+    z-index: 1;
+    background-color: rgb(241,232,218);
 }
 .containerPhotoGallery p{
     font-size: 16px;
@@ -136,7 +148,6 @@
         margin: 0;
     }
     .containerRooms {
-        margin-top: 10px;
         display: block;
     }
     .containerRooms .containerLeft{
@@ -159,4 +170,11 @@
     .containerPhotoGallery .slider {
         gap: 0px;
     }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .containerRooms .containerTitle{
+        margin: 0;
+        padding: 0px;
+    }
+
 }

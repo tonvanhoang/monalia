@@ -6,12 +6,12 @@ export default function ComponentSuitesRoom(){
         <div className="containerSuitesRoom">
         <h1>SUITES</h1>
         <hr />
-        <div className="suites">
+        <div className="suitesroom">
             <div className='suitesLeft'>
                 <h3>
                 The Gaea and Elea Suites combine simplicity with masterful design, creating a space that radiates warmth and serenity.
                 </h3>
-                <div className="containerTitle">
+                <div className="containerTitleSuites">
               <div className="titleLeft">
                 <div>
                   <p>Attributes:</p>

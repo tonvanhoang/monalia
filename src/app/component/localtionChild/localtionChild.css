@@ -1,5 +1,8 @@
 .localtionChild{
     padding: 0px 20px;
+    position: relative;
+    z-index: 1;
+    background-color: rgb(241,232,218);
 }
 .localtionChild .location,.localtionChild h1{
     font-weight: 200;

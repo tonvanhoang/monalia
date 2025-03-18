@@ -9,7 +9,7 @@ export default function ComponentNav() {
   const [hideLi, setHideLi] = useState(false); 
   const [showLi, setShowLi] = useState(false);
   const [liIndex, setLiIndex] = useState(0); // New state for li index
-
+  const [showNavbar, setShowNavbar] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -19,6 +19,14 @@ export default function ComponentNav() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowNavbar(true);
+        }, 300);
+
+        return () => clearTimeout(timer);
+    }, []);
+
 
   useEffect(() => {
     const btnMenu = document.getElementById("btn-menu");
@@ -68,8 +76,7 @@ export default function ComponentNav() {
 
   return (
     <>
-      <nav>
-        <div className="top">
+      <nav id="navbar" className={showNavbar ? "showNav" : ""}>        <div className="top">
         <button id="btn-menu"><a href="#">MENU</a></button>
         <div className={`imgTop ${isScrolled ? "scrolled" : ""}`}>
           <img src="/img/symbol-logo-mob.svg" alt="" />

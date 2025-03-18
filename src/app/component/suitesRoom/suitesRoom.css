@@ -1,10 +1,12 @@
 .containerSuitesRoom{
     width: 100%;
     padding:0px 20px;
-    margin-top: 100px;
+    padding-top: 100px;
     background-color: rgb(241,232,218);
+    position: relative;
+    z-index: 1;
 }
-.suites{
+.suitesroom{
     display: flex;
     width: 100%;
     gap: 20px;
@@ -17,78 +19,78 @@
 .containerSuitesRoom hr{
     margin-bottom: 40px;
 }
-.suites .suitesLeft{
+.suitesroom .suitesLeft{
     width: 40%;
 }
-.suites .suitesLeft h3{
+.suitesroom .suitesLeft h3{
     font-size: 24px;
     font-weight: 200;
     line-height: 36px;
 }
-.containerTitle{
+.containerTitleSuites{
     margin-top: 50px;
     display: flex;
 }
-.containerTitle .titleLeft{
+.containerTitleSuites .titleLeft{
     width: 50%;
 }
-.containerTitle .titleLeft p{
+.containerTitleSuites .titleLeft p{
     font-size: 16px;
     font-weight: 200;
     margin: 0;
 }
-.containerTitle .titleLeft hr{
+.containerTitleSuites .titleLeft hr{
     margin: 0;
     margin: 10px 0px;
 }
-.containerTitle .titleRight{
+.containerTitleSuites .titleRight{
     width: 50%;
 }
-.containerTitle .titleRight .item div{
+.containerTitleSuites .titleRight .item div{
     display: flex;
 }
-.containerTitle .titleRight .item div img{
+.containerTitleSuites .titleRight .item div img{
     margin-right: 20px;
     width: 24px;
     height: 24px;
 }
-.containerTitle .titleRight .item div p{
+.containerTitleSuites .titleRight .item div p{
     font-size: 16px;
     font-weight: 200;
     margin: 0;
 }
-.containerTitle .titleRight .item hr{
+.containerTitleSuites .titleRight .item hr{
     margin: 10px 0px;
 }
-.suites .suitesRight{
+.suitesroom .suitesRight{
     width: 60%;
 }
-.suites .suitesRight .suitesChild{
+.suitesroom .suitesRight .suitesChild{
     display: flex;
     width: 100%;
     gap: 10px;
 }
-.suites .suitesRight .suitesChild .item-1{
+.suitesroom .suitesRight .suitesChild .item-1{
     width: 50%;
 }
-.suites .suitesRight .suitesChild .item-1 .img{
+.suitesroom .suitesRight .suitesChild .item-1 .img{
     width: 100%;
     height: 45vh;
     overflow: hidden;
     position: relative; 
 }
-.suites .suitesRight .suitesChild img {
+.suitesroom .suitesRight .suitesChild img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
     transition: all 0.5s;
     object-fit: cover;
 }
-.suites .suitesRight .suitesChild img:hover {
+.suitesroom .suitesRight .suitesChild img:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
-.suites .suitesRight .suitesChild button{
+.suitesroom .suitesRight .suitesChild button{
     margin-top: 20px;
     border: 1px solid black;
     background-color: rgba(255, 255, 255, 0);
@@ -96,43 +98,49 @@
     border-radius: 30px;
     transition: all 0.5s;
 }
-.suites .suitesRight .suitesChild button:hover{
+.suitesroom .suitesRight .suitesChild button:hover{
     background-color: black;
 }
-.suites .suitesRight .suitesChild button a{
+.suitesroom .suitesRight .suitesChild button a{
     font-weight: 200;
     color: black;
     text-decoration: none;
     padding: 7px 50px;
 }
-.suites .suitesRight .suitesChild button:hover a{
+.suitesroom .suitesRight .suitesChild button:hover a{
     color: white;
 }
 @media (max-width: 768px){
-    .suites{
+    .suitesroom{
         display: block;
     }
-    .suites .suitesLeft{
+    .suitesroom .suitesLeft{
         width: 100%;
     }
-    .suites .suitesRight{
+    .suitesroom .suitesRight{
         width: 100%;
     }
-    .suites .suitesRight .suitesChild{
+    .suitesroom .suitesRight .suitesChild{
         display: block;
         width: 100%;
         gap: 10px;
     }
-    .suites .suitesRight .suitesChild .item-1{
+    .suitesroom .suitesRight .suitesChild .item-1{
         margin-top: 50px;
         width: 100%;
 }
 }
 @media (min-width: 768px) and (max-width: 1024px){
-    .suites .suitesRight .suitesChild .item-1{
+    .containerTitleSuites .titleLeft{
+        width: 40%;
+    }
+    .containerTitleSuites .titleRight{
+        width: 60%;
+    }
+    .suitesroom .suitesRight .suitesChild .item-1{
         margin-top: 20px;
     }
-    .suites .suitesRight .suitesChild .item-1 .img{
+    .suitesroom .suitesRight .suitesChild .item-1 .img{
        height: 15vh;
     }
 }

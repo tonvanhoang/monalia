@@ -6,11 +6,11 @@ export default function ComponentVilaRoom(){
         <div className="containervillasRoom">
         <h1>Villas</h1>
         <hr />
-        <div className="villas">
+        <div className="villasroom">
             <div className='villasLeft'>
                 <h3>
                 The Anthea and Galini Villas offer larger, more luxurious accommodations, ideal for families or groups seeking ultimate comfort and privacy.                </h3>
-                <div className="containerTitle">
+                <div className="containerTitleVilas">
               <div className="titleLeft">
                 <div>
                   <p>Attributes:</p>

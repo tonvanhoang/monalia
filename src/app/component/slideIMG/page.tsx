@@ -15,14 +15,14 @@ export default function ComponentSlideIMG() {
       const nextButton = activeButton.nextElementSibling || carousel.querySelector('.carousel-indicators button:first-child') as HTMLElement;
       activeButton.classList.remove('active');
       nextButton.classList.add('active');
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="section-6">
-      <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
         <div className="carousel-indicators">
           <h1>Gallery</h1>
           <div className='button'>

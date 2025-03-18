@@ -74,22 +74,22 @@
     font-size: 16px;
     font-weight: 200;
 }
-.section-5 .right .containerTitle .titleRight{
+.section-5 .right .containerTitle .titleRightVila{
     width: 50%;
 }
-.section-5 .right .containerTitle .titleRight .itemVila div{
+.section-5 .right .containerTitle .titleRightVila .itemVila div{
     display: flex;
 }
-.section-5 .right .containerTitle .titleRight .itemVila div img{
+.section-5 .right .containerTitle .titleRightVila .itemVila div img{
     margin-right: 20px;
     width: 25px;
     height: 25px;
 }
-.section-5 .right .containerTitle .titleRight .itemVila div p{
+.section-5 .right .containerTitle .titleRightVila .itemVila div p{
     font-size: 16px;
     font-weight: 200;
 }
-.section-5 .right .containerTitle .titleRight .itemVila hr{
+.section-5 .right .containerTitle .titleRightVila .itemVila hr{
     display: block;
 }
 .section-5 .element-images {

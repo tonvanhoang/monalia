@@ -1,8 +1,10 @@
 .parge{
     padding: 0px 20px;
-    margin-top: 50px;
+    padding-top: 50px;
     position: relative;
     gap: 20px;
+    z-index: 1;
+    background-color: rgb(241,232,218);
 }
 .parge h1{
     font-weight: 200;
@@ -95,6 +97,9 @@
     background-color: gray;
 }
 @media (max-width: 768px){
+    .element-images .slider {
+        gap: 0px;
+    }
     .parge .content{
         display: block;
         padding-top: 20px;
@@ -106,8 +111,8 @@
         width: 100%;
     }
     .element-images .slider .item {
-        width: calc(100% / 1); /* Adjusted width to show 3 items */
-        height: 40vh;
+        width: 100%;
+        height: 30vh;
 
     }
 }

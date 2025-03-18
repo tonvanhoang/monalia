@@ -1,8 +1,10 @@
 .axerontasRiver{
     padding: 0px 20px;
-    margin-top: 50px;
+    padding-top: 50px;
     position: relative;
     gap: 20px;
+    z-index: 1;
+    background-color: rgb(241,232,218);
 }
 .axerontasRiver h1{
     font-weight: 200;

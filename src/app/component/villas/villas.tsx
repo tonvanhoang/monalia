@@ -103,7 +103,7 @@ export default function ComponentVillas() {
                   <hr />
                 </div>
               </div>
-              <div className="titleRight">
+              <div className="titleRightVila">
                 <div className="itemVila">
                   <div>
                     <img src="/img/person-icon.svg" alt="" />
